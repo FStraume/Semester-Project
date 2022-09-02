@@ -1,0 +1,36 @@
+body {
+    font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Husk å endre font */
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header,
+footer {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+}
+
+nav {
+
+}
+
+nav ul {
+
+}
+
+nav li {
+    display: inline-block;
+}
+
+.name {
+
+}
+#astronaut {
+    width: auto;
+    height: 985px;
+}
