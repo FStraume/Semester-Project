@@ -2,6 +2,7 @@ body {
     font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
     scroll-behavior: smooth;
     background-color: #1E1D1D;
+    color: #fff;
 }
 /* Husk å endre font */
 
@@ -26,17 +27,18 @@ nav {
     margin-left: 150px;
 }
 
-nav ul {
-
-}
-
 nav li {
     display: inline-block;
     padding: 20px;
 }
 
-.name {
-    font-size: 20px;
+footer {
+    position: fixed;
+    bottom: 0%;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 /* Frontpage */
@@ -80,23 +82,152 @@ nav li {
     position: absolute;
     bottom: 5px;
     align-items: center;
-    transform: translate(-50%, -50%);
-    animation: jump 2s infinite;
+    animation: blink 2s linear infinite;
 }
 
 #arrows {
     margin: 5px;
     width: 50px;
-    height: 50px;
+    height: 26px;
 }
 
-@keyframes jump {
-    0% { transform: translate(-50%, -50%) scale(1.25, 0.75);}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.articles {
+    max-width: 1200px;
+    margin: 30px auto;
+    font-size: 25px;
+}
+
+.articles p {
+    margin: 0px;
 }
 
 .article1,
 .article2 {
     display: flex;
-    max-width: 1200px;
-    margin: 10px auto;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.article_img {
+    height: 200px;
+    width: 305px;
+}
+
+.article3 {
+    text-align: center;
+
+}
+
+.article3 p {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#article3_img {
+    height: 400px;
+    width: 1200px;
+}
+
+/* Explore */
+
+.explore_main p {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.explore_select {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+
+}
+
+.page_select {
+    height: 722px;
+    width: 722px;
+}
+
+/* For Kids */
+
+.kids_welcome {
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.kids_main {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.kids_text {
+    max-width: 600px;
+    font-size: 20px;
+}
+
+#paragraph1,
+#paragraph2,
+#paragraph3 {
+    margin-bottom: 70px;
+}
+
+/* For teachers */
+
+.for_teachers {
+    text-align: center;
+}
+
+.for_teachers a {
+    text-decoration: underline;
+}
+
+/* Exhibition Spaces */
+
+.main_display_list {
+    display: flex;
+    flex-direction: column;
+    max-width: 2000px;
+    margin: 0 auto;
+    row-gap: 50px;
+}
+
+.cosmology,
+.evolution,
+.biology,
+.robotics,
+.ecology {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.main_display_list img {
+    justify-self: center;
+}
+
+.cosmology_text,
+.biology_text,
+.ecology_text {
+    justify-self: start;
 }
