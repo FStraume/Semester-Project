@@ -231,3 +231,40 @@ h1 {
 .ecology_text {
     justify-self: start;
 }
+
+/* Special Events */
+
+.main_list {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    justify-self: center;
+}
+
+.news1, 
+.news2,
+.news3 {
+    display: grid;
+    grid-template-rows: 1fr 200px;
+}
+
+.news1_text,
+.news2_text,
+.news3_text {
+    max-width: 732px;
+    text-align: center;
+    justify-self: center;
+
+}
+
+/* Visit */
+
+.basic_info {
+    background-image: url(/IMG/exhibition-1863344_1920.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    display: flex;
+}
