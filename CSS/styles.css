@@ -256,10 +256,13 @@ img {
     max-width: 732px;
     text-align: center;
     justify-self: center;
-
 }
 
 /* Visit */
+
+.visit_main h2 {
+    margin: 0;
+}
 
 .basic_info {
     background-image: url(/IMG/exhibition-1863344_1920.png);
@@ -267,4 +270,61 @@ img {
     background-repeat: no-repeat;
     color: #000;
     display: flex;
+    justify-content: center;
+    gap: 200px;
+    height: 450px;
+    align-items: center;
+
+}
+
+.basic_info ul {
+    list-style: none;
+}
+
+.hours {
+    display: flex;
+    flex-direction: row;
+    font-size: 35px;
+}
+
+.hours ul {
+    margin: 0;
+    padding: 0 40px 0 0;
+}
+
+
+
+
+.location img {
+    width: 334px;
+    height: 240px;
+}
+
+.visit_info {
+    font-size: 24px;
+    text-align: center;
+}
+
+.admission,
+.accessibility,
+.food,
+.shop {
+    margin-top: 45px;
+}
+
+/* Get Involved */
+
+.get_involved_main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact_cta {
+    justify-content: center;
+    padding: 10px;
+    font-size: 30px;
+    border: 1px solid #000;
+    border-radius: 25px;
+    background-color: #000;
+    
 }
