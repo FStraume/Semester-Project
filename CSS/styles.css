@@ -1,5 +1,11 @@
+
+@font-face {
+    font-family: "Cantata One";
+    src: url(https://fonts.googleapis.com/css2?family=Cantata+One&display=swap) format("truetype");
+}
+
 body {
-    font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     scroll-behavior: smooth;
     background-color: #1E1D1D;
     color: #fff;
@@ -73,7 +79,11 @@ footer {
     font-size: 30px;
     color: #fff;
     top: 300px;
-    right: 14px;
+    left: 100px;
+}
+
+.welcome_text h1 {
+    text-align: left;
 }
 
 .arrows {
@@ -118,6 +128,7 @@ footer {
 .article1,
 .article2 {
     display: flex;
+    flex-direction: column;
     gap: 15px;
     align-items: flex-start;
     justify-content: center;
@@ -326,5 +337,57 @@ img {
     border: 1px solid #000;
     border-radius: 25px;
     background-color: #000;
-    
+    position: relative;
+    left: 497px;
+    top: 86px;
+    margin-bottom: 15px;
+} 
+
+.get_involved_text {
+    margin-top: 150px;
 }
+
+.support,
+.volunteer,
+.internships {
+    text-align: center;
+}
+
+/* Contact */
+
+
+.contact_cta {
+    background-color: #000;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+}
+
+input, select, textarea {
+    border-radius: 5px;
+    border: 1px solid #010D26;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+}
+
+textarea {
+    height: 300px;
+}
+
+.contact_form, 
+.contact_cta {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper > * {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
