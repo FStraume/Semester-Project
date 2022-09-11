@@ -17,9 +17,8 @@ a {
     color: #fff;
 }
 
-header {
-    display: flex;
-    align-items: center;
+a:hover {
+    text-decoration: underline;
 }
 
 header,
@@ -29,18 +28,68 @@ footer {
     width: 100%;
 }
 
+header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+header a {
+    color: #fff;
+    margin: 20px;
+    font-size: 20px;
+}
+
 nav {
-    margin-left: 150px;
+    margin-left: 25px;
+    display: none;
+    position: fixed;
+    top: 81px;
+    background-color: #000;
+    z-index: 1000;
+    right: 8px;
+    float: right;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
     padding: 20px;
+}
+
+header label {
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+
+}
+
+.home_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
 }
 
 footer {
     position: fixed;
     bottom: 0%;
+    text-align: center;
 }
 
 .active {
@@ -128,7 +177,7 @@ footer {
 .article1,
 .article2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     align-items: flex-start;
     justify-content: center;
