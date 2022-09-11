@@ -104,12 +104,14 @@ footer {
     margin: 5px;
 }
 
+
 #astronaut {
     width: 100%;
-    height: 985px;
+    height: 700px;
     background-repeat: no-repeat;
     filter: blur(8px);
     box-sizing: border-box;
+    background-size: cover;
 
     
 }
@@ -127,7 +129,7 @@ footer {
     position: absolute;
     font-size: 30px;
     color: #fff;
-    top: 300px;
+    top: 200px;
     left: 100px;
 }
 
@@ -165,7 +167,7 @@ footer {
 }
 
 .articles {
-    max-width: 1200px;
+    max-width: 400px;
     margin: 30px auto;
     font-size: 25px;
 }
@@ -174,19 +176,28 @@ footer {
     margin: 0px;
 }
 
-.article1,
+.article1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+
 .article2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     gap: 15px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     margin-bottom: 100px;
 }
 
 .article_img {
     height: 200px;
-    width: 305px;
+    width: 400px;
 }
 
 .article3 {
@@ -201,7 +212,7 @@ footer {
 
 #article3_img {
     height: 400px;
-    width: 1200px;
+    width: 100%;
 }
 
 /* Explore */
@@ -216,6 +227,7 @@ h1 {
 
 .explore_select {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 100px;
@@ -223,8 +235,8 @@ h1 {
 }
 
 .page_select {
-    height: 722px;
-    width: 722px;
+    height: 300px;
+    width: 300px;
 }
 
 /* For Kids */
@@ -237,8 +249,10 @@ h1 {
 
 .kids_main {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
-    gap: 50px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .kids_text {
@@ -270,7 +284,9 @@ h1 {
     max-width: 2000px;
     margin: 0 auto;
     row-gap: 50px;
+    text-align: center;
 }
+
 
 .cosmology,
 .evolution,
@@ -278,12 +294,13 @@ h1 {
 .robotics,
 .ecology {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 1fr;
 }
 
 .main_display_list img {
     justify-self: center;
+    width: 100%;
+    max-width: 500px;
 }
 
 .cosmology_text,
@@ -291,6 +308,8 @@ h1 {
 .ecology_text {
     justify-self: start;
 }
+
+
 
 /* Special Events */
 
@@ -307,7 +326,7 @@ img {
 .news2,
 .news3 {
     display: grid;
-    grid-template-rows: 1fr 200px;
+    grid-template-rows: 1fr;
 }
 
 .news1_text,
@@ -440,3 +459,9 @@ textarea {
     flex-direction: column;
 }
 
+@media (min-width: 600px) {
+
+
+
+
+}
