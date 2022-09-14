@@ -13,6 +13,7 @@ body {
     scroll-behavior: smooth;
     background-color: #1E1D1D;
     color: #fff;
+    margin: 0px;
 }
 /* Husk å endre font */
 
@@ -53,13 +54,11 @@ header a {
 }
 
 nav {
-    margin-left: 25px;
     display: none;
     position: fixed;
     top: 92px;
     background-color: #000;
     z-index: 1000;
-    right: 13px;
     float: right;
     width: 100%;
 }
@@ -523,9 +522,56 @@ textarea {
     }
 
     .articles {
-        max-width: 700px;
+        max-width: 1000px;
         font-size: 20px;
     }
 
+    .article1,
+    .article2 {
+        flex-direction: row;
+    }
 
+    .page_select {
+        height: 400px;
+        width: 400px;
+    }
+
+    .kids_main {
+        max-width: 700px;
+        font-size: 23px;
+    }
+
+    .for_teachers {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .main_display_list {
+        max-width: 1000px;
+    }
+
+    .cosmology,
+    .evolution,
+    .biology,
+    .robotics,
+    .ecology {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    }
+
+    .basic_info {
+        flex-direction: row;
+        height: 500px;
+    }
+
+    .visit_info {
+        max-width: 800px;
+        font-size: 20px;
+    }
+
+    .get_involved_main {
+        max-width: 800px;
+        font-size: 23px;
+    }
 }
